@@ -111,3 +111,6 @@ dist
 
 # Build folder
 build
+
+# history folder
+.history

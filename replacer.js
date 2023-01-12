@@ -13,8 +13,7 @@ const replacer = (path) => {
         }
         const result = data
             .replace('${BASE_URL}', env)
-            .replace("import BASE_URL from '../config/env.js'", '')
-            .replace("import option from './config/options.js'", '')
+            .replace(/import\s+(BASE_URL|option)\s+from\s+[^;]+;/, '')
             .replace('export function', 'export default function')
             .replace(
                 '//options',

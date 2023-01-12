@@ -4,9 +4,6 @@
     "description": "",
     "main": "index.js",
     "type": "module",
-    "directories": {
-        "test": "tests"
-    },
     "scripts": {
         "bundle": "webpack --config webpack.config.cjs ",
         "exec:all": "webpack --config webpack.config.cjs  && k6 run build/test.bundle.js",
@@ -17,7 +14,7 @@
         "url": ""
     },
     "keywords": [],
-    "author": "",
+    "author": "Vladyslav Tkachenko",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/vladlearns"
